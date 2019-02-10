@@ -14,9 +14,9 @@ You will use one of these companies as a guide for your content.  For design, y
 
 These project requirements directly impact the grading rubric, so read them carefully:
 
-- [ ] Pick one of the three companies in the project description as your client
+- [x] Pick one of the three companies in the project description as your client (*Calm Mind*)
 
-- [ ] Pick which website you admire to mimic for layout, you will provide the URL at the bottom of the readme file
+- [x] Pick which website you admire to mimic for layout, you will provide the URL at the bottom of the readme file
 
 - [ ] You must have images and headings matching your clients content theme.  Everything else can be filler text (lorem ipsum)
 
@@ -38,9 +38,9 @@ Images and content can be frustrating to find and use in any project.  To allev
 
 We will be using git throughout the semester.  Each project much be forked and cloned to get started.  
 
-- [ ] Fork and clone this repo: https://github.com/BigKnell/marketing-website
+- [x] Fork and clone this repo: https://github.com/BigKnell/marketing-website
 
-- [ ] You have been provided a [bare bones website starter folder (website folder)](website).  Use index.html as a starting point for your HTML and index.css for your CSS
+- [x] You have been provided a [bare bones website starter folder (website folder)](website).  Use index.html as a starting point for your HTML and index.css for your CSS
 
 - [ ] Build your website following the project requirements as your guide
 
@@ -48,4 +48,4 @@ We will be using git throughout the semester.  Each project much be forked and 
 
 - [ ] When you have completed the website, submit your repository URL
 
-The URL you used for layout is: 
+The URL you used for layout is: [Healthy Lifestyle - alifeyii](https://www.instagram.com/p/Btqhjy5Br7d/)
