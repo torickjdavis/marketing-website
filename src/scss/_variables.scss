@@ -1,5 +1,10 @@
-$font-primary: 'Times New Roman', serif;
-$font-accent: 'Montserrat', sans-serif;
-$color-primary: rgba(21, 41, 69, 1), #152945;
-$color-secondary: rgba(36, 89, 97, 1), #245961;
-$color-accent: rgba(87, 150, 85), #579655;
+$font-primary: 'Montserrat', sans-serif;
+$font-accent: 'Times New Roman', serif;
+$color-primary: rgb(30, 58, 98);
+$color-primary-translucent: rgba(21, 41, 69, 0.9);
+$color-secondary: rgb(54, 105, 176);
+$color-tertiary: rgb(148, 173, 209);
+$color-accent: rgb(99, 207, 198);
+$color-accent-transparent: rgba(99, 207, 198, 0.3);
+$black: rgba(0, 0, 0, 0.7);
+$black-light: rgba(0, 0, 0, 0.5);

@@ -1,4 +1,17 @@
-body {
-  font-family: $font-primary;
-  font-size: 62.5%;
+header.navigation {
+    nav {
+        
+        &.active {
+            display: inline-block;
+        }
+        
+        a {
+            display: none;
+
+        }
+    }
+
+    a.toggle-menu {
+        display: block;
+    }
 }

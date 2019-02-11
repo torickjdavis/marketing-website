@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/script.js"></script>
   </head>
 
   <body id="root">
-    <header>
+    <header class="navigation">
       <h1>Calm Mind</h1>
       <nav>
-        <button><i class="fas fa-bars"></i></button>
+        <a href="#" class="toggle-menu"><i class="fas fa-bars"></i></a>
         <a href="#root">Home</a>
         <a href="#about">About</a>
         <a href="#packages">Packages</a>
@@ -23,11 +24,24 @@
     </header>
     <main>
       <section id="about">
-        <h2>Revitalize.<br>Relax.<br>Rejuvanate.</h2>
-        <img src="" alt="" class="hero-image">
-        <img src="" alt="" class="transistion-image">
+        <h2 class="hero-text">Relax.<br>Revitalize.<br>Rejuvanate.</h2>
+        <div class="hero-image"></div>
+        <div class="transition-image"></div>
+        <aside id="social">
+          <a href="https://twitter.com/">
+          <i class="fab fa-twitter"></i>
+        </a>
+          <a href="https://facebook.com/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+          <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXebxttQCq0zA">
+            <!--<a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4Q2SnB3glnP">-->
+            <i class="fab fa-spotify"></i>
+          </a>
+        </aside>
       </section>
       <section id="packages">
+        <h2 class="title">Packages</h2>
         <div class="package">
           <header>
             <h3 class="title">Clarity</h3>
@@ -90,18 +104,6 @@
           <input type="submit" value="Send">
         </div>
       </section>
-      <aside id="social">
-        <a href="https://twitter.com/">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://facebook.com/">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXebxttQCq0zA">
-        <!--<a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX4Q2SnB3glnP">-->
-          <i class="fab fa-spotify"></i>
-        </a>
-      </aside>
     </main>
     <footer>
       <nav>
