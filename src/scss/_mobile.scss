@@ -5,11 +5,11 @@ a {
 
 header.navigation {
     position: relative;
-    
+
     h1 {
         font-size: 3.6rem;
     }
-    
+
     nav {
         position: absolute;
         left: 0;
@@ -26,6 +26,8 @@ header.navigation {
                 display: block;
                 width: 100%;
                 background: $color-secondary;
+                border-radius: 0;
+                padding: 1rem 0;
             }
         }
 
@@ -34,14 +36,15 @@ header.navigation {
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            width: 5rem;
-            height: 5rem;
+            width: 6rem;
+            height: 6rem;
             font-size: 4.4rem;
             background: $color-primary;
             position: absolute;
-            top: 0;
+            top: -1rem;
             right: 2rem;
             z-index: 2;
+            border-radius: 1rem;
         }
 
     }
@@ -52,16 +55,17 @@ header.navigation {
     height: 80vh;
     grid-template-columns: [bg-s] 1fr [social-s col-s] 4fr [col-e social-e] 1fr [bg-e];
     grid-template-rows: [col-s] 4fr [col-e social-s] 1fr [social-e];
-    
+
     &::after {
         content: normal;
         display: none;
     }
-    
-    .hero-image, .transition-image {
+
+    .hero-image,
+    .transition-image {
         display: none;
     }
-    
+
     .hero-text {
         font-size: 5rem;
     }
@@ -69,11 +73,17 @@ header.navigation {
 
 #social {
     flex-direction: row;
+
+    a {
+        font-size: 3rem;
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 #about {
     padding: 4rem 1rem;
-    
+
     p {
         width: 100%;
     }
@@ -84,7 +94,7 @@ header.navigation {
 
 #packages {
     flex-direction: column;
-    
+
     h2.title {
         margin-bottom: 2rem;
     }
@@ -97,15 +107,25 @@ header.navigation {
 #contact {
     padding: 9rem 0 0 0;
     display: flex;
-    flex-direction: column;
-    
-    .info, .form {
+    flex-direction: column-reverse;
+
+    p {
+        font-size: 3rem;
+    }
+
+    .info,
+    .form {
         padding: 1rem;
         border-radius: 0;
         box-shadow: none;
-    }
-    
-    .form {
         width: 100%;
+    }
+
+    .form {
+
+        input,
+        textarea {
+            font-size: 3rem;
+        }
     }
 }

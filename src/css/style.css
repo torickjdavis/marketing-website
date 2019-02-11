@@ -388,20 +388,23 @@ footer a {
     display: block;
     width: 100%;
     background: #3669b0;
+    border-radius: 0;
+    padding: 1rem 0;
   }
   header.navigation nav a.toggle-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     font-size: 4.4rem;
     background: #1e3a62;
     position: absolute;
-    top: 0;
+    top: -1rem;
     right: 2rem;
     z-index: 2;
+    border-radius: 1rem;
   }
 
   #hero {
@@ -413,7 +416,8 @@ footer a {
     content: normal;
     display: none;
   }
-  #hero .hero-image, #hero .transition-image {
+  #hero .hero-image,
+#hero .transition-image {
     display: none;
   }
   #hero .hero-text {
@@ -422,6 +426,11 @@ footer a {
 
   #social {
     flex-direction: row;
+  }
+  #social a {
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
   }
 
   #about {
@@ -448,15 +457,21 @@ footer a {
   #contact {
     padding: 9rem 0 0 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  #contact .info, #contact .form {
+  #contact p {
+    font-size: 3rem;
+  }
+  #contact .info,
+#contact .form {
     padding: 1rem;
     border-radius: 0;
     box-shadow: none;
-  }
-  #contact .form {
     width: 100%;
+  }
+  #contact .form input,
+#contact .form textarea {
+    font-size: 3rem;
   }
 }
 
