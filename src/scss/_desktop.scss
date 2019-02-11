@@ -53,9 +53,9 @@ img {
   position: relative;
   height: 90vh;
   display: grid;
-  grid-template-columns: [social-s bg-s] 1fr [ social-e trans-s col-s] 4fr [col-e trans-e] 1fr [hero-s] 2fr [bg-e] 1fr [hero-e] 1fr;
-  grid-template-rows: [col-s] 1fr [hero-s] 4fr [social-s] 1fr [col-e] 2fr [social-e hero-e trans-s] 1fr [trans-m] 2fr [trans-e];
-
+  grid-template-columns: [social-s bg-s] 1fr [social-e trans-s col-s] 4fr [col-e trans-e] 1fr [hero-s] 2fr [bg-e] 1fr [hero-e] 1fr;
+  grid-template-rows: [col-s] 1fr [hero-s] 4fr [social-s] 1fr [col-e] 1fr [trans-s] 1fr [social-e] 1fr [trans-m] 1fr [hero-e] 1fr [trans-e];
+  
   &::before {
     content: "";
     position: absolute;
@@ -82,17 +82,17 @@ img {
   }
 
   .hero-image {
-    background: url("https://images.unsplash.com/photo-1527342726932-1d392fcdd316?auto=format&fit=crop&w=1920&q=10");
+    background: url("https://images.unsplash.com/photo-1488345979593-09db0f85545f?auto=format&fit=crop&w=1920&q=10");
     grid-column: hero-s/hero-e;
     grid-row: hero-s/hero-e;
-    background-position: top;
+    background-position: bottom;
   }
 
   .transition-image {
-    background: url("https://images.unsplash.com/photo-1488345979593-09db0f85545f?auto=format&fit=crop&w=1920&q=10");
+    background: url("https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1920&q=10");
     grid-column: trans-s/trans-e;
     grid-row: trans-s/trans-e;
-    background-position: bottom;
+    background-position: center;
   }
 
   .hero-image,
@@ -118,14 +118,14 @@ img {
 #social {
   grid-column: social-s/social-e;
   grid-row: social-s/social-e;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  
+
   font-size: 2.5rem;
-  
+
   a {
     color: white;
     text-decoration: none;
@@ -137,7 +137,7 @@ img {
     align-items: center;
     width: 4.5rem;
     height: 4.5rem;
-    
+
     &:hover {
       color: $color-tertiary;
       border: 0.2rem solid $color-tertiary;
@@ -152,7 +152,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
   .title {
     color: white;
     font-size: 3rem;

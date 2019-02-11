@@ -104,7 +104,7 @@ img {
   height: 90vh;
   display: grid;
   grid-template-columns: [social-s bg-s] 1fr [social-e trans-s col-s] 4fr [col-e trans-e] 1fr [hero-s] 2fr [bg-e] 1fr [hero-e] 1fr;
-  grid-template-rows: [col-s] 1fr [hero-s] 4fr [social-s] 1fr [col-e] 2fr [social-e hero-e trans-s] 1fr [trans-m] 2fr [trans-e];
+  grid-template-rows: [col-s] 1fr [hero-s] 4fr [social-s] 1fr [col-e] 1fr [trans-s] 1fr [social-e] 1fr [trans-m] 1fr [hero-e] 1fr [trans-e];
 }
 #about::before {
   content: "";
@@ -130,16 +130,16 @@ img {
   grid-row: 1/trans-m;
 }
 #about .hero-image {
-  background: url("https://images.unsplash.com/photo-1527342726932-1d392fcdd316?auto=format&fit=crop&w=1920&q=10");
+  background: url("https://images.unsplash.com/photo-1488345979593-09db0f85545f?auto=format&fit=crop&w=1920&q=10");
   grid-column: hero-s/hero-e;
   grid-row: hero-s/hero-e;
-  background-position: top;
+  background-position: bottom;
 }
 #about .transition-image {
-  background: url("https://images.unsplash.com/photo-1488345979593-09db0f85545f?auto=format&fit=crop&w=1920&q=10");
+  background: url("https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1920&q=10");
   grid-column: trans-s/trans-e;
   grid-row: trans-s/trans-e;
-  background-position: bottom;
+  background-position: center;
 }
 #about .hero-image,
 #about .transition-image {
