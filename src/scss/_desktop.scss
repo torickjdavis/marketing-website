@@ -242,7 +242,93 @@ img {
 }
 
 #contact {
+  padding: 9rem 3rem 4.5rem 3rem;
   background: $color-secondary;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .info {
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+  }
+
+  .info,
+  .form {
+    box-shadow: 0 0 2rem 0.1rem $color-accent-transparent;
+    background: white;
+    color: $black;
+    padding: 4rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  a {
+    color: $black;
+  }
+
+  p {
+    padding: 0.5rem;
+
+    &:nth-child(2) {
+      border: 0.2rem solid $black;
+      border-right: none;
+      border-left: none;
+    }
+
+  }
+
+  .fas {
+    font-size: 2.2rem;
+    margin: 0.5rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+
+  input,
+  textarea {
+    background: white;
+    padding: 0.75rem 1rem;
+    margin-bottom: 2rem;
+
+    font-family: inherit;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input {
+    border: none;
+    border-bottom: 0.2rem solid $black;
+  }
+
+  textarea {
+    border: 0.2rem solid $black;
+    border-radius: 1rem;
+  }
+
+  input[type="submit"] {
+    font-size: 2.5rem;
+    border: 0.2rem solid $black;
+    border-radius: 1rem;
+
+    &:active {
+      background: $black;
+      color: white;
+    }
+  }
 }
 
 footer {

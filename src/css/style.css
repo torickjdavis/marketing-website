@@ -273,7 +273,79 @@ img {
 }
 
 #contact {
+  padding: 9rem 3rem 4.5rem 3rem;
   background: #3669b0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+#contact h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+#contact .info {
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+#contact .info,
+#contact .form {
+  box-shadow: 0 0 2rem 0.1rem rgba(99, 207, 198, 0.3);
+  background: white;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 4rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+#contact a {
+  color: rgba(0, 0, 0, 0.7);
+}
+#contact p {
+  padding: 0.5rem;
+}
+#contact p:nth-child(2) {
+  border: 0.2rem solid rgba(0, 0, 0, 0.7);
+  border-right: none;
+  border-left: none;
+}
+#contact .fas {
+  font-size: 2.2rem;
+  margin: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+.form input,
+.form textarea {
+  background: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  color: inherit;
+}
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+}
+.form input {
+  border: none;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.7);
+}
+.form textarea {
+  border: 0.2rem solid rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+.form input[type=submit] {
+  font-size: 2.5rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+}
+.form input[type=submit]:active {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 footer {
@@ -291,14 +363,100 @@ footer a {
 }
 
 @media only screen and (max-width: 500px) {
-  header.navigation nav.active {
-    display: inline-block;
+  a {
+    font-size: 3rem;
+    line-height: 3.4rem;
+  }
+
+  header.navigation {
+    position: relative;
+  }
+  header.navigation h1 {
+    font-size: 3.6rem;
+  }
+  header.navigation nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10rem;
+    z-index: 1;
   }
   header.navigation nav a {
     display: none;
   }
-  header.navigation a.toggle-menu {
+  header.navigation nav.active a {
     display: block;
+    width: 100%;
+    background: #3669b0;
+  }
+  header.navigation nav a.toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 5rem;
+    height: 5rem;
+    font-size: 4.4rem;
+    background: #1e3a62;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    z-index: 2;
+  }
+
+  #hero {
+    height: 80vh;
+    grid-template-columns: [bg-s] 1fr [social-s col-s] 4fr [col-e social-e] 1fr [bg-e];
+    grid-template-rows: [col-s] 4fr [col-e social-s] 1fr [social-e];
+  }
+  #hero::after {
+    content: normal;
+    display: none;
+  }
+  #hero .hero-image, #hero .transition-image {
+    display: none;
+  }
+  #hero .hero-text {
+    font-size: 5rem;
+  }
+
+  #social {
+    flex-direction: row;
+  }
+
+  #about {
+    padding: 4rem 1rem;
+  }
+  #about p {
+    width: 100%;
+  }
+  #about .about-image {
+    display: none;
+  }
+
+  #packages {
+    flex-direction: column;
+  }
+  #packages h2.title {
+    margin-bottom: 2rem;
+  }
+
+  .package {
+    margin: 1rem 1rem;
+  }
+
+  #contact {
+    padding: 9rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact .info, #contact .form {
+    padding: 1rem;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  #contact .form {
+    width: 100%;
   }
 }
 
